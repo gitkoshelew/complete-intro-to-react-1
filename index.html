@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>svideo</title>
-    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="./public/style.css" />
 </head>
 <body>
-    <div id="app"><%= body %></div>
-    <script src="/public/bundle.js"></script>
+    <div id="app"></div>
+    <!-- <script src="node_modules/react/dist/react.js"></script> -->
+    <script src="./public/bundle.js"></script>
+    <!-- <script>
+            const ce = React.createElement
+            const MT = function(props){
+                return ce('div', null,
+                ce('h1', { style: { color: props.color } }, props.title)
+                )
+            }    
+            const MC = function(){
+                return ce('div', {id: 'wrapper'},
+                ce(MT,{title: '1', color: 'yellow'}),
+                ce(MT,{title: '2', color: 'GreenYellow'}),
+                ce(MT,{title: '3', color: 'yellowGreen'}),
+                ce(MT,{title: '4', color: 'peru'})
+                )
+            }
+    
+            ReactDOM.render(
+                ce(MC),
+                document.getElementById('app')
+            )
+    </script> -->  
+    
+    <!-- <script>
+        const ce = React.createElement
+        const MT = function(props){
+            return ce('div', null,
+            ce('h1', { style: { color: props.color } }, props.title)
+            )
+        }
+
+        const MC = function(){
+            return ce('div', {id: 'wrapper'},
+            ce(MT,{title: '1', color: 'yellow'}),
+            ce(MT,{title: '2', color: 'GreenYellow'}),
+            ce(MT,{title: '3', color: 'yellowGreen'}),
+            ce(MT,{title: '4', color: 'peru'})
+            )
+        }
+
+        ReactDOM.render(
+            ce(MC),
+            document.getElementById('app')
+        )
+    </script> -->
 </body>
 </html>
